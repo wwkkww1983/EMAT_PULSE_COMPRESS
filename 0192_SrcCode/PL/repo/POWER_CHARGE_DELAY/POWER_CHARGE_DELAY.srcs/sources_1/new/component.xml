@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>POWER_CHARGE_DELAY</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>POWER_CHARGE_DELAY</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>cfe8a117</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>POWER_CHARGE_DELAY</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>cfe8a117</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>7fd3e6eb</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>TR</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rst</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>POWER1_EN</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>POWER2_EN</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>TR1</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>RST_ALWAYS_HIGH</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>IDLE</spirit:name>
+        <spirit:displayName>Idle</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.IDLE">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>POWER_CHARGE</spirit:name>
+        <spirit:displayName>Power Charge</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.POWER_CHARGE">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>TOP_TR</spirit:name>
+        <spirit:displayName>Top Tr</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.TOP_TR">2</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>HV_CLOSE_DELAY</spirit:name>
+        <spirit:displayName>Hv Close Delay</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.HV_CLOSE_DELAY">4</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>POWER_CHARGE_DELAY.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_cfe8a117</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>POWER_CHARGE_DELAY.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/POWER_CHARGE_DELAY_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_7fd3e6eb</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>POWER_CHARGE_DELAY_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>IDLE</spirit:name>
+      <spirit:displayName>Idle</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.IDLE">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>POWER_CHARGE</spirit:name>
+      <spirit:displayName>Power Charge</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.POWER_CHARGE">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TOP_TR</spirit:name>
+      <spirit:displayName>Top Tr</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.TOP_TR">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">POWER_CHARGE_DELAY_v1_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>HV_CLOSE_DELAY</spirit:name>
+      <spirit:displayName>Hv Close Delay</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.HV_CLOSE_DELAY">4</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">virtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qvirtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qkintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qkintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">akintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qzynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">azynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">spartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aspartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexu</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynquplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexuplusHBM</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexuplus58g</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintexu</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>POWER_CHARGE_DELAY_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>8</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-11-09T14:10:57Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@417d053c_ARCHIVE_LOCATION">d:/doc/vivado2019_1/power_charge_delay/power_charge_delay.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@390ca4a7_ARCHIVE_LOCATION">d:/doc/vivado2019_1/power_charge_delay/power_charge_delay.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40cc0133_ARCHIVE_LOCATION">d:/doc/vivado2019_1/power_charge_delay/power_charge_delay.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78fd6651_ARCHIVE_LOCATION">d:/doc/vivado2019_1/power_charge_delay/power_charge_delay.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1dce1e54_ARCHIVE_LOCATION">d:/doc/vivado2019_1/power_charge_delay/power_charge_delay.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@388b843a_ARCHIVE_LOCATION">d:/doc/vivado2019_1/power_charge_delay/power_charge_delay.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@506f653c_ARCHIVE_LOCATION">d:/doc/vivado2019_1/power_charge_delay/power_charge_delay.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41798dd0_ARCHIVE_LOCATION">d:/doc/vivado2019_1/power_charge_delay/power_charge_delay.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ca59858_ARCHIVE_LOCATION">d:/doc/vivado2019_1/power_charge_delay/power_charge_delay.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37dfda7a_ARCHIVE_LOCATION">d:/doc/vivado2019_1/power_charge_delay/power_charge_delay.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d60a3ae_ARCHIVE_LOCATION">d:/doc/vivado2019_1/power_charge_delay/power_charge_delay.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@357b1205_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c053410_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3083979a_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19c073ee_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29c36909_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48bf4232_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78016999_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63dfdc4_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d29a6e8_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7500fc4e_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1674d3f8_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b79fc14_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7662bc3d_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e6572c6_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@356c8d5a_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@284e4d79_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d8fa78c_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8af168b_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59ea8f60_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1722858c_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@522c7d43_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e5c4b75_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a4aaffe_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65071079_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a631d4b_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57c59dc6_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7483f606_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b337842_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3821356f_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23ae6408_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41dedbb4_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2269294e_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3684b889_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30586cf3_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50d950c0_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6448c553_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78fa896b_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72202dea_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1059c8a7_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f3cde6a_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78672cc6_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e25bc58_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76345da7_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24d27046_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d426b52_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@478fe956_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d9ea24c_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4361b54e_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fc80ad1_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5240d2eb_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27c76968_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5682f380_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68858049_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d181ad3_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b9622c6_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fdb0ffe_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4af84b81_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@583fe44_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@798f0f6d_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63cbfc6c_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64d509e0_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@539e4d28_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52445dc5_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/POWER_CHARGE_DELAY/POWER_CHARGE_DELAY.srcs/sources_1/new</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="20d24bc1"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="8ebb6ac2"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="266e7329"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="66aa548d"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Doc/Vivado2019_1/Pulse_Gen/Pulse_Gen.srcs/sources_1/new/Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Doc/Vivado2019_1/Pulse_Gen/Pulse_Gen.srcs/sim_1/new/TOP_TEST.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_TEST

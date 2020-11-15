@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>i2c_MCP4725</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>i2c_MCP4725</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>33f2ff3b</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>i2c_MCP4725</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>33f2ff3b</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_testbench</spirit:name>
+        <spirit:displayName>Test Bench</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation.testbench</spirit:envIdentifier>
+        <spirit:modelName>vtf_i2c_test</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_testbench_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>604e214c</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>2c994a4b</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>rst</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sda</spirit:name>
+        <spirit:wire>
+          <spirit:direction>inout</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>scl</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>reg</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>data</spirit:name>
+        <spirit:displayName>Data</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.data" spirit:bitStringLength="16">0x01D9</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>i2c_MCP4725.srcs/sources_1/new/i2c_MCP4725.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_33f2ff3b</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>i2c_MCP4725.srcs/sources_1/new/i2c_MCP4725.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_testbench_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>i2c_MCP4725.srcs/sim_1/new/vtf_i2c_test.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_testbench</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>vtf_i2c_test_behav.wcfg</spirit:name>
+        <spirit:fileType>unknown</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_testbench</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/i2c_MCP4725_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_2c994a4b</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>i2c_MCP4725_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>data</spirit:name>
+      <spirit:displayName>Data</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.data" spirit:bitStringLength="16">0x01D9</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">i2c_MCP4725_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">virtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qvirtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qkintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qkintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">akintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qzynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">azynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">spartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aspartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexu</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynquplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexuplusHBM</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintexu</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>i2c_MCP4725_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>6</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-10-12T04:29:00Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74dbc834_ARCHIVE_LOCATION">e:/study_project/fpga_competition/workplace_vivado/i2c_mcp4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@492b34a7_ARCHIVE_LOCATION">e:/study_project/fpga_competition/workplace_vivado/i2c_mcp4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11cf080a_ARCHIVE_LOCATION">e:/study_project/fpga_competition/workplace_vivado/i2c_mcp4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23af8ca2_ARCHIVE_LOCATION">e:/study_project/fpga_competition/workplace_vivado/i2c_mcp4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7601755f_ARCHIVE_LOCATION">e:/study_project/fpga_competition/workplace_vivado/i2c_mcp4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dfaa7c2_ARCHIVE_LOCATION">e:/study_project/fpga_competition/workplace_vivado/i2c_mcp4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ead40b5_ARCHIVE_LOCATION">e:/study_project/fpga_competition/workplace_vivado/i2c_mcp4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16bd70a7_ARCHIVE_LOCATION">e:/study_project/fpga_competition/workplace_vivado/i2c_mcp4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4955ea08_ARCHIVE_LOCATION">e:/study_project/fpga_competition/workplace_vivado/i2c_mcp4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@663447cb_ARCHIVE_LOCATION">e:/study_project/fpga_competition/workplace_vivado/i2c_mcp4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46953025_ARCHIVE_LOCATION">e:/study_project/fpga_competition/workplace_vivado/i2c_mcp4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8a538a_ARCHIVE_LOCATION">e:/study_project/fpga_competition/workplace_vivado/i2c_mcp4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4193372b_ARCHIVE_LOCATION">e:/study_project/fpga_competition/workplace_vivado/i2c_mcp4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@609c05c5_ARCHIVE_LOCATION">e:/study_project/fpga_competition/workplace_vivado/i2c_mcp4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b73da9c_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@829c18b_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a49cc43_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c70c377_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34e7559b_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57296bf4_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cd66d4a_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8dfdb37_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70d7b683_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30f20264_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22dca5ba_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4015753b_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13a515a_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ebe5982_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f506f14_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35724eb2_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ba55fff_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58f1e71f_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e8fc675_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79ed02fb_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d63117f_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fe8ebbc_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48f7d1b9_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12cfbfd5_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7bda49b5_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17083beb_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@646bac14_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@be1cdb0_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f8c5c6d_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b5e8056_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d85825c_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73adaf86_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@454c877c_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@204c201c_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f58decf_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51d41d0f_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dc52d0d_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54ec5e2a_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e4e1489_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@442d44bc_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bb43987_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@528ffeaf_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6011e04d_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4890887c_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cafe4fc_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f35b8fe_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40365e6b_ARCHIVE_LOCATION">d:/Doc/Vivado2019_1/i2c_MCP4725</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="a0c58948"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="8cc7dc25"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="b2130e3a"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="004c544d"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

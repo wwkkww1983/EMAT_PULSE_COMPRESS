@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../i2c_MCP4725.srcs/sources_1/new/i2c_MCP4725.v" \
+"../../../../i2c_MCP4725.srcs/sim_1/new/vtf_i2c_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

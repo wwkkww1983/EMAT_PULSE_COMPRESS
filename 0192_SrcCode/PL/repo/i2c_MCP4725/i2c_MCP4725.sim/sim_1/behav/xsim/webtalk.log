@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Oct  9 18:37:26 2020
+# Process ID: 9612
+# Current directory: E:/Study_Project/FPGA_Competition/Workplace_Vivado/i2c_MCP4725/i2c_MCP4725.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source E:/Study_Project/FPGA_Competition/Workplace_Vivado/i2c_MCP4725/i2c_MCP4725.sim/sim_1/behav/xsim/xsim.dir/vtf_i2c_test_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/Study_Project/FPGA_Competition/Workplace_Vivado/i2c_MCP4725/i2c_MCP4725.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: E:/Study_Project/FPGA_Competition/Workplace_Vivado/i2c_MCP4725/i2c_MCP4725.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/Study_Project/FPGA_Competition/Workplace_Vivado/i2c_MCP4725/i2c_MCP4725.sim/sim_1/behav/xsim/xsim.dir/vtf_i2c_test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'E:/Study_Project/FPGA_Competition/Workplace_Vivado/i2c_MCP4725/i2c_MCP4725.sim/sim_1/behav/xsim/xsim.dir/vtf_i2c_test_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Oct  9 18:37:32 2020. For additional details about this file, please refer to the WebTalk help file at E:/Study_Software/Vivado/install/Vivado/2019.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 109.172 ; gain = 23.586
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct  9 18:37:32 2020...

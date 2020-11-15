@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Pulse_Gen.srcs/sources_1/new/Top.v" \
+"../../../../Pulse_Gen.srcs/sim_1/new/TOP_TEST.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
